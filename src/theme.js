@@ -9,6 +9,7 @@ const blue = "#6EB5C0"
 const beige = "#E2E8E4"
 const darkBlue = "#006C84"
 
+
 const colors = {
   lightGray,
   DarkGray,

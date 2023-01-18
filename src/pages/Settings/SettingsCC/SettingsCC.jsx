@@ -4,7 +4,7 @@ import Header from "../../../components/Header/HeaderCC"
 // import { colors } from "../../../constants/colors"
 import {
   ListItem,
-  OpeningList,
+  SelectList,
   TitleTheme,
   Wrapper,
   WrapperTitle,
@@ -28,7 +28,7 @@ export class SettingsCC extends Component {
         <WrapperTitle>
           <TitleTheme>
             Switch Theme:
-            <OpeningList value={value} onChange={this.handleChange}>
+            <SelectList value={value} onChange={this.handleChange}>
               {/* {colors.map(({ color }) => (
                 <ListItem key={color} value={color}>
                   {color}
@@ -37,7 +37,7 @@ export class SettingsCC extends Component {
               <ListItem value='white'>white</ListItem>
               <ListItem value='black'>black</ListItem>
               <ListItem value='color'>color</ListItem>
-            </OpeningList>
+            </SelectList>
           </TitleTheme>
         </WrapperTitle>
       </Wrapper>

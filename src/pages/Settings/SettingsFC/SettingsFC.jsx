@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import Header from "../../../components/Header/HeaderFC"
 import {
   ListItem,
-  OpeningList,
+  SelectList,
   TitleTheme,
   Wrapper,
   WrapperTitle,
@@ -23,7 +23,7 @@ export function SettingsFC() {
       <WrapperTitle>
         <TitleTheme>
           Switch Theme:
-          <OpeningList onChange={handleChange} value={value}>
+          <SelectList onChange={handleChange} value={value}>
             {/* {colors.map(({ color }) => (
               <ListItem key={color} value={color}>
                 {color}
@@ -32,7 +32,7 @@ export function SettingsFC() {
             <ListItem value='white'>white</ListItem>
             <ListItem value='black'>black</ListItem>
             <ListItem value='color'>color</ListItem>
-          </OpeningList>
+          </SelectList>
         </TitleTheme>
       </WrapperTitle>
     </Wrapper>

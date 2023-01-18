@@ -31,7 +31,7 @@ export const WrapperTitle = styled.div`
   margin-top: 1%;
   margin-left: 1%;
 `
-export const OpeningList = styled.select`
+export const SelectList = styled.select`
   margin-left: 1%;
 `
 
