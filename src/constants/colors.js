@@ -1,30 +1,23 @@
-// export const value = [
-//   { value: "white" },
-//   { value: "black" },
-//   { value: "color" },
-// ]
+import theme from "../theme"
 
-// export const value = [
-//   { value:value, color: "white" },
-//   { value:value, color: "black" },
-//   { value:value, color: "color" },
-// ]
+const { colors } = theme
 
-// export const colors = [
-//   { color: "white" },
-//   { color: "black" },
-//   { color: "colored" },
-// ]
-
-// import { createContext } from "react"
-
-export const colors = {
-  white: "white",
-  black: "black",
-  colored: "colored",
+export const whiteTheme = {
+  body: colors.lightGray,
+  textColor: colors.light,
+  buttonColor: colors.light,
 }
-
-// export const ThemeContext = createContext({
-//   theme: colors.white,
-//   toggleTheme: () => {},
-// })
+export const blackTheme = {
+  body: colors.black,
+  headerColor: colors.DarkGray,
+  textColor: colors.light,
+  buttonColor: colors.light,
+  colorNumbers: colors.dark,
+}
+export const colorTheme = {
+  body: colors.pink,
+  headerColor: colors.darkBlue,
+  textColor: colors.beige,
+  buttonColor: colors.beige,
+  colorNumbers: colors.darkBlue,
+}

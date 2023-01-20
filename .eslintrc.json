@@ -21,6 +21,7 @@
     "react/prefer-stateless-function": "off",
     "react/no-array-index-key": "off",
     "react/destructuring-assignment": "off",
-    "react/no-unused-state": "off"
+    "react/no-unused-state": "off",
+    "default-param-last": "off"
   }
 }

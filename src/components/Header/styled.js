@@ -6,6 +6,7 @@ export const WrapperHeader = styled.div`
   min-height: 50px;
   max-height: 100px;
   background-color: #434343;
+  background-color: ${({ theme }) => theme.headerColor};
 `
 
 export const Wrapper = styled.div`
@@ -21,7 +22,7 @@ export const NameCalculatorApp = styled.p`
   color: white;
   margin: 0;
   height: 30px;
-  font-size: 20px;
+  font-size: ${({ theme }) => theme.fontSizes[1]}px;
   line-height: 30px;
 `
 
@@ -38,7 +39,7 @@ export const LinkHeader = styled.button`
   // border: 1px solid red;
   background-color: #434343;
   color: white;
-  font-size: 16px;
+  font-size: ${({ theme }) => theme.fontSizes[0]}px;
 `
 export const Title = styled.p`
   color: #ffffff;

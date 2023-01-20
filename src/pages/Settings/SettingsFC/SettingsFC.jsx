@@ -1,7 +1,9 @@
 import React, { useState } from "react"
+import { useDispatch } from "react-redux"
 
-// import { colors } from "../../../constants/colors"
+import { handleSetColor } from "../../../actions"
 import Header from "../../../components/Header/HeaderFC"
+import { items } from "../../../constants/colors2"
 import {
   ListItem,
   SelectList,
@@ -10,12 +12,18 @@ import {
   WrapperTitle,
 } from "../styled"
 
+const { black, color, white } = items
+
 export function SettingsFC() {
-  const [value, setValue] = useState("white")
+  const [value, setValue] = useState(white)
+  const dispatch = useDispatch()
 
   const handleChange = (e) => {
     setValue(e.target.value)
+    dispatch(handleSetColor(e.target.value))
   }
+
+  const colors = [white, black, color]
 
   return (
     <Wrapper>
@@ -24,14 +32,11 @@ export function SettingsFC() {
         <TitleTheme>
           Switch Theme:
           <SelectList onChange={handleChange} value={value}>
-            {/* {colors.map(({ color }) => (
-              <ListItem key={color} value={color}>
-                {color}
+            {colors.map((e) => (
+              <ListItem key={e} value={e}>
+                {e}
               </ListItem>
-            ))} */}
-            <ListItem value='white'>white</ListItem>
-            <ListItem value='black'>black</ListItem>
-            <ListItem value='color'>color</ListItem>
+            ))}
           </SelectList>
         </TitleTheme>
       </WrapperTitle>

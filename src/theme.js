@@ -9,7 +9,6 @@ const blue = "#6EB5C0"
 const beige = "#E2E8E4"
 const darkBlue = "#006C84"
 
-
 const colors = {
   lightGray,
   DarkGray,
@@ -20,29 +19,11 @@ const colors = {
   beige,
   darkBlue,
 }
+const spaces = [0, 2, 4, 8, 12]
+const fontSizes = [16, 20]
 
-export const allTheme = {
-  white: {
-    body: colors.lightGray,
-    headerColor: colors.DarkGray,
-    textColor: colors.light,
-    buttonColor: colors.light,
-    colorNumbers: colors.dark,
-  },
-  black: {
-    body: colors.black,
-    headerColor: colors.DarkGray,
-    textColor: colors.light,
-    buttonColor: colors.light,
-    colorNumbers: colors.dark,
-  },
-  color: {
-    body: colors.pink,
-    headerColor: colors.darkBlue,
-    textColor: colors.beige,
-    buttonColor: colors.beige,
-    colorNumbers: colors.darkBlue,
-  },
+export default {
+  colors,
+  spaces,
+  fontSizes,
 }
-
-// export const ThemeContext = React.createContext(allTheme.white)
