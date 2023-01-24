@@ -19,7 +19,8 @@ export const BtnHome = styled.button`
   height: 30px;
   background-color: #434343;
   color: white;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: ${({ theme }) => theme.fontSizes[0]}px;
   align-items: flex-end;
 `
 

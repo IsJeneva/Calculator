@@ -37,9 +37,10 @@ export const LinkHeader = styled.button`
   outline: none;
   height: 30px;
   // border: 1px solid red;
-  background-color: #434343;
+  /* background-color: #434343; */
   color: white;
   font-size: ${({ theme }) => theme.fontSizes[0]}px;
+  background-color: ${({ theme }) => theme.headerColor};
 `
 export const Title = styled.p`
   color: #ffffff;

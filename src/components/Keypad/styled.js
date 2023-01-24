@@ -25,9 +25,11 @@ export const KeypadButton = styled.button`
   border: 1px solid #707070;
   font: normal normal normal 32px/75px "Kanit", sans-serif;
   margin-top: 15%;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: ${({ theme }) => theme.buttonColor};
 
   &:hover {
-    background: #808080;
+    /* background: #808080; */
+    background: ${({ theme }) => theme.backgroundHover};
   }
 `
