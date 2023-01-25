@@ -1,8 +1,13 @@
 import styled from "styled-components"
 
+const HISTORYPANEL_WIDTH = 250
+const HISTORYPANEL_HEIGHT = 600
+
 export const HistoryPanel = styled.div`
-  width: 250px;
-  height: 600px;
+  /* width: 250px; */
+  width: ${HISTORYPANEL_WIDTH}px;
+  /* height: 600px; */
+  height: ${HISTORYPANEL_HEIGHT}px;
   max-height: 650px;
   /* border: 2px solid #adff2f; */
   border: 2px solid #adff2f;
@@ -14,5 +19,4 @@ export const BtnClearHistory = styled.button`
   justify-content: center;
   color: red; */
   transform: translateX(50%);
- 
 `

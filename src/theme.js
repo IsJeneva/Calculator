@@ -33,7 +33,7 @@ const colors = {
   warmBeige,
   darkBeige,
 }
-const spaces = [0, 2, 4, 8, 10, 12]
+const spaces = [0, 2, 4, 8, 10, 12, 16, 20, 40, 50, 100]
 const fontSizes = [16, 20]
 
 export default {
