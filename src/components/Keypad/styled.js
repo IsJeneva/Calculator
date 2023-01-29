@@ -27,10 +27,12 @@ export const KeypadButton = styled.button`
   width: ${({ theme }) => theme.spaces[8] + theme.spaces[8]}px;
   /* height: 80px; */
   height: ${({ theme }) => theme.spaces[8] + theme.spaces[8]}px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
+  border-radius: ${({ theme }) => theme.spaces[4] + theme.spaces[7]}px;
   cursor: pointer;
   margin: 15px 0;
-  border: 1px solid #707070;
+  /* border: 2px solid #707070; */
+  border: ${({ theme }) => theme.spaces[1]}px solid #707070;
   font: normal normal normal 32px/75px "Kanit", sans-serif;
   margin-top: 15%;
   /* background-color: #ffffff; */

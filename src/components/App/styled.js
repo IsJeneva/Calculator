@@ -10,7 +10,8 @@ export const Container = styled.div`
   margin-right: auto;
   width: 100%;
   height: ${CONTAINER_HEIGHT}px;
-  border: 2px solid grey;
+  /* border: 2px solid grey; */
+  border: ${({ theme }) => theme.spaces[1]}px solid grey;
   background-color: #e9e9e9;
   background-color: ${({ theme }) => theme.body};
 `

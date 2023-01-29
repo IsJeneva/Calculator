@@ -10,7 +10,8 @@ export const HistoryPanel = styled.div`
   height: ${HISTORYPANEL_HEIGHT}px;
   max-height: 650px;
   /* border: 2px solid #adff2f; */
-  border: 2px solid #adff2f;
+  /* border: 2px solid #adff2f; */
+  border: ${({ theme }) => theme.spaces[1]}px solid #adff2f;
   display: ${({ active }) => (active ? "block" : "none")};
 `
 
